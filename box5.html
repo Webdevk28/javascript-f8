@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+    <input type="text">
+    
+    <input type="checkbox">
+
+    <select>
+        <option value="1">Js</option>
+        <option value="2">PHP</option>
+        <option value="3">CSS</option>
+    </select>
+
+
+    <script>
+        // input text
+        var inputTextElement = document.querySelector('input[type=text]')
+
+        inputTextElement.oninput = function(e) {
+            console.log(e.target.value)
+        }
+
+
+        // input checkbox
+        var inputCheckElement = document.querySelector('input[type=checkbox]')
+
+            inputCheckElement.onchange = function(e) {
+                console.log(e.target.checked)
+            }
+
+        // select option
+        var selectElement = document.querySelector('select')
+
+            selectElement.onchange = function(e) {
+                console.log(e.target.value)
+            }
+
+        // console.log(selectElement)
+    </script>
+</body>
+
+</html>
